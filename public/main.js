@@ -145,7 +145,9 @@ $(() => {
 
   //Comments
   const showNewComm = async () => {
-    const comments = await axios.get("http://localhost:3000/comments");
+    const comments = await axios.get(
+      "https://portfolio-dab.herokuapp.com/comments"
+    );
     $("#commentsList").append(
       `<li class='comment'><h3>${
         comments.data[comments.data.length - 1].name
@@ -161,7 +163,7 @@ $(() => {
       $("#commentTextArea").css({ border: "1px solid red" });
     else {
       axios
-        .post("http://localhost:3000/comments", {
+        .post("https://portfolio-dab.herokuapp.com/comments", {
           name: $("#name").val(),
           comment: $("#commentTextArea").val(),
         })
@@ -180,7 +182,9 @@ $(() => {
   });
 
   const getComments = async () => {
-    const comments = await axios.get("http://localhost:3000/comments");
+    const comments = await axios.get(
+      "https://portfolio-dab.herokuapp.com/comments"
+    );
     for (var i in comments.data) {
       $("#commentsList").append(
         `<li class='comment'><h3>${comments.data[i].name}</h3><p>${comments.data[i].comment}</p></li>`

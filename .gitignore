@@ -1,3 +1,4 @@
 node_modules
 dotenv
-img
+/img
+.vscode
