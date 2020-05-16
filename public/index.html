@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dabit - Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="logo">
+        <a href="/"><span>&lt;</span>/<span>></span></a>
+      </h1>
+      <hr />
+      <h1 id="title">Dabit - Portfolio</h1>
+      <p>Frontend and backend developer</p>
+    </header>
+
+    <div class="container" id="intro">
+      <button class="slide-button left" id="introLeft">
+        &lt;
+      </button>
+      <div class="slider" id="introSlider">
+        <div id="myself" class="slide introSlide">
+          <h2>About myself</h2>
+          <p>
+            Hello! Welcome to my portfolio!
+            <br /><br />
+            My name is David 'Dabit' Sánchez, I'm a 20 years old frontend and
+            backend web developer from Barcelona
+            <br /><br />
+            Hope you enjoy this portfolio! :D
+            <br /><br />
+            Slide right for more info about me or scroll down to see my projects
+            and contact stuff!
+          </p>
+        </div>
+        <div class="slide introSlide" id="languagues">
+          <h2>Languagues</h2>
+          <p>
+            Some languagues, frameworks, libraries I can program with:
+            <br />
+            <br />
+            HTML, CSS, Javascript, C++, Python, Bootstrap, Nodejs, Reactjs,
+            mongoDB, Express, Socket.io...
+            <br />
+            <br />
+            Currently working more on backend frameworks/libraries
+          </p>
+        </div>
+        <div class="slide introSlide" id="more">
+          <h2>Studies</h2>
+          <p>
+            Right now I'm studying a computer science degree at Universitat
+            Politècnica de Catalunya
+          </p>
+        </div>
+        <div class="slide introSlide" id="more2">
+          <h2>Comments section</h2>
+          <p>
+            You can leave a comment/review about this page or about the projects
+            I did down on the very bottom of this page!
+            <br /><br />Thank you!
+          </p>
+        </div>
+      </div>
+      <button class="slide-button right" id="introRight">></button>
+    </div>
+
+    <div class="container" id="projs">
+      <button class="slide-button left" id="projsLeft">
+        &lt;
+      </button>
+      <div class="slider" id="projsSlider">
+        <div id="mainSlide" class="slide projsSlide">
+          <h2>Projects</h2>
+          <div id="mainProjs">
+            <div class="types">
+              <div class="typeProj" id="htmlcss">
+                <h3>HTML & CSS</h3>
+              </div>
+              <div class="typeProj" id="js">
+                <h3>Javascript</h3>
+              </div>
+            </div>
+            <div class="types">
+              <div class="typeProj" id="mern">
+                <h3>MERN</h3>
+              </div>
+              <div class="typeProj" id="socket">
+                <h3>SOCKET.IO</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide projsSlide" id="htmlcssSlide">
+          <h2>HTML & CSS</h2>
+          <ul>
+            <li><a href="#" target="_blank">Project #1</a></li>
+            <li><a href="#" target="_blank">Project #2</a></li>
+            <li><a href="#" target="_blank">Project #3</a></li>
+            <li><a href="#" target="_blank">Project #4</a></li>
+          </ul>
+          <div class="projsImg" id="htmlImg">
+            <img src="img/html.png" alt="HTML" />
+            <img src="img/css.png" alt="CSS" />
+          </div>
+        </div>
+        <div class="slide projsSlide" id="jsSlide">
+          <h2>JS</h2>
+          <ul>
+            <li><a href="#" target="_blank">Project #1</a></li>
+            <li><a href="#" target="_blank">Project #2</a></li>
+            <li><a href="#" target="_blank">Project #3</a></li>
+            <li><a href="#" target="_blank">Project #4</a></li>
+          </ul>
+          <div class="projsImg" id="jsImg">
+            <img src="img/js.png" alt="Javascript" />
+          </div>
+        </div>
+        <div class="slide projsSlide" id="mernSlide">
+          <h2>MERN</h2>
+          <ul>
+            <li><a href="#" target="_blank">Project #1</a></li>
+            <li><a href="#" target="_blank">Project #2</a></li>
+            <li><a href="#" target="_blank">Project #3</a></li>
+            <li><a href="#" target="_blank">Project #4</a></li>
+          </ul>
+          <div class="projsImg" id="mernImg">
+            <img src="img/mern/mongodb.png" alt="mongoDB" />
+            <img src="img/mern/express.png" alt="express" />
+            <img src="img/mern/reactjs.png" alt="reactjs" id="react" />
+            <img src="img/mern/nodejs.png" alt="nodejs" />
+          </div>
+        </div>
+        <div class="slide projsSlide" id="socketSlide">
+          <h2>SOCKET.IO</h2>
+          <ul>
+            <li><a href="#" target="_blank">Project #1</a></li>
+            <li><a href="#" target="_blank">Project #2</a></li>
+            <li><a href="#" target="_blank">Project #3</a></li>
+            <li><a href="#" target="_blank">Project #4</a></li>
+          </ul>
+          <div class="projsImg" id="socketImg">
+            <img src="img/socketio.png" alt="socketio" />
+          </div>
+        </div>
+      </div>
+      <button class="slide-button right" id="projsRight">></button>
+    </div>
+
+    <div class="content" id="contact">
+      <h2>Contact</h2>
+      <form action="mailto:dabitsr@gmail.com" method="GET">
+        <input
+          name="subject"
+          autocomplete="off"
+          id="subject"
+          type="text"
+          placeholder="Subject"
+          class="input"
+        />
+        <textarea
+          name="body"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+          class="textarea"
+        ></textarea>
+        <button type="submit" id="send" class="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="content" id="comments">
+      <h2>Comments</h2>
+
+      <ul id="commentsList">
+        <li class="comment">
+          <h3>Dabit</h3>
+          <p>Come on say something! Don't be shy :)</p>
+        </li>
+      </ul>
+    </div>
+
+    <div id="addComment" class="content">
+      <h2>Add a comment</h2>
+      <form>
+        <input
+          type="text"
+          class="input"
+          id="name"
+          autocomplete="off"
+          placeholder="Name"
+        />
+        <textarea
+          id="commentTextArea"
+          cols="30"
+          rows="10"
+          class="textarea"
+          placeholder="Comment"
+        ></textarea>
+
+        <button type="submit" class="submit" id="submitComment">Submit</button>
+      </form>
+    </div>
+
+    <div id="success">
+      <h1>Comment added!</h1>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-img">
+          <a href="https://github.com/dabitsr" target="_blank"
+            ><img id="git" src="img/github.png" alt="github" title="github"
+          /></a>
+          <a href="https://twitter.com/dabitSr" target="_blank"
+            ><img id="tw" src="img/twitter.png" alt="twitter" title="twitter"
+          /></a>
+        </div>
+        <p>Made with HTML, CSS, JS, Nodejs & Love &lt;3</p>
+        <p>by David "Dabit" Sánchez</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
