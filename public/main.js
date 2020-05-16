@@ -36,7 +36,6 @@ $(() => {
         break;
       default:
         ++projsI;
-        console.log(projsI);
         if (projsI >= projsSlides.length) projsI = 0;
         offset = n + projsI * off;
         $("#projsSlider").scrollLeft(offset);
@@ -54,7 +53,6 @@ $(() => {
         break;
       default:
         --projsI;
-        console.log(projsI);
         if (projsI < 0) projsI = projsSlides.length - 1;
         offset = n + projsI * off;
         $("#projsSlider").scrollLeft(offset);
@@ -86,7 +84,6 @@ $(() => {
     .mousemove(() => {})
     .mouseup(() => {
       finX = event.clientX;
-      console.log(finX);
       $("#introSlider").css({ cursor: "grab" });
       if (finX - initX < 0) {
         moveRight("intro");
@@ -104,7 +101,6 @@ $(() => {
     .mousemove(() => {})
     .mouseup(() => {
       finX = event.clientX;
-      console.log(finX);
       $("#projsSlider").css({ cursor: "grab" });
       if (finX - initX < 0) {
         moveRight("projs");
@@ -174,8 +170,6 @@ $(() => {
           setTimeout(() => $("#success").removeClass("displaySuccess"), 3500);
 
           showNewComm();
-
-          console.log(res);
         })
         .catch((err) => console.log(err));
     }
@@ -190,8 +184,6 @@ $(() => {
         `<li class='comment'><h3>${comments.data[i].name}</h3><p>${comments.data[i].comment}</p></li>`
       );
     }
-
-    console.log(comments.data);
   };
 
   getComments();
